@@ -1,5 +1,8 @@
 :root {
-    --card: #FFFFFF;
+    --card: #3f51b5;
+    --yellow: #ffeb3b;
+    --white: #FFFFFF;
+    --font: 'Rubik', sans-serif;
 
 }
 
@@ -52,6 +55,24 @@ picture {
       scroll-behavior: auto !important;
     }
 }
+h1 {
+    font-family: var(--font);
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: var(--yellow);
+}
+h2 {
+    font-family: var(--font);
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--yellow);
+}
+h3 {
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: var(--white);
+}
 .container {
     width: 25rem;
     height: 30rem;
@@ -74,7 +95,7 @@ picture {
 }
 .second {
     gap: 2rem;
-    padding: 1.5rem 2rem 4rem 2rem;
+    padding: 3rem 2rem 2rem 2rem;
     display: flex;
     align-items: left;
     justify-content: center;
@@ -95,5 +116,5 @@ picture {
     background-image: url(/images/r.png);
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: 3rem;
+    margin-top: 1rem;
 }
