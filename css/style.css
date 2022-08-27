@@ -1,0 +1,96 @@
+:root {
+    --card: #FFFFFF;
+
+}
+
+/* GOBALS */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    background: linear-gradient(180deg, #0D1A2D 0%, #042D5E 100%);
+  }
+  /* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+     scroll-behavior: auto;
+    }
+    
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+}
+.container {
+    width: 20rem;
+    height: 25rem;
+    background-color: var(--card);
+    border-radius: 2rem;
+}
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.first {
+    gap: 3rem;
+    padding: 3rem 2rem 0 2rem;
+    display: flex;
+    align-items: left;
+    justify-content: center ;
+    flex-direction: column;
+}
+.second {
+    gap: 2rem;
+    padding: 1.5rem 2rem 2rem 2rem;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+}
+.line {
+    border-bottom: 1px solid #042D5E;
+    opacity: 0.4;
+    width: 20rem;
+    margin-top: 2rem;
+}
+.button {
+    display: block;
+    border-radius: 4rem;
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--card);
+    background-image: url(/images/r.png);
+    background-repeat: no-repeat;
+    background-size: cover;
