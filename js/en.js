@@ -1,3 +1,4 @@
+const aplicacion = document.querySelector('.first')
 const options = {
 	method: 'GET',
 	headers: {
@@ -8,14 +9,12 @@ const options = {
 
 fetch('https://random-word-generator2.p.rapidapi.com/word.php?generator=words&api_key=5w36eV0FZJu9QIPlpR18', options)
 	.then(response => response.json())
-	.then(response => console.log(response))
-    .then(data => mostrarData(data))
-	.catch(err => console.error(err));
+	.then(data => {
+        console.log(data.word)
+        const h1 = document.createElement('h1')
+        h1.innerHTML = data.word
+        aplicacion.appendChild(h1)
 
-    const mostrarData = (data) => {
-        console.log(data)
-        let body = ''
-        for (let i = 0; i<data.lenght; i++){
-            body += `<h1>${data[i].word}</h1>`
-        }
-    }
+    })
+	.catch(err => console.error(err))
+
