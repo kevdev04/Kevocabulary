@@ -1,4 +1,4 @@
-const aplicacion = document.querySelector('.first')
+/*const aplicacion = document.querySelector('.first')
 const options = {
 	method: 'GET',
 	headers: {
@@ -16,5 +16,4 @@ fetch('https://random-word-generator2.p.rapidapi.com/word.php?generator=words&ap
         aplicacion.appendChild(h1)
 
     })
-	.catch(err => console.error(err))
-
+	.catch(err => console.error(err))*/
