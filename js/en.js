@@ -1,19 +1,40 @@
-/*const aplicacion = document.querySelector('.first')
-const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': 'ee63d43bc6mshcb966097e9e34b6p1ea795jsnb8f00594d042',
-		'X-RapidAPI-Host': 'random-word-generator2.p.rapidapi.com'
-	}
-};
+const aplicacion = document.querySelector('.first')
 
-fetch('https://random-word-generator2.p.rapidapi.com/word.php?generator=words&api_key=5w36eV0FZJu9QIPlpR18', options)
-	.then(response => response.json())
-	.then(data => {
-        console.log(data.word)
-        const h1 = document.createElement('h1')
-        h1.innerHTML = data.word
-        aplicacion.appendChild(h1)
 
-    })
-	.catch(err => console.error(err))*/
+const app = [
+
+{
+	word: "the",
+        palabra: "El / Los",
+        sentence: "The sun is up",
+        oracion: "El sol ha salido"
+},
+{
+	word: "be",
+        palabra: "Ser / Estar",
+        sentence: "Don't be sad",
+        oracion: "No estes trsite"
+},
+{
+        word: 'as',
+        palabra: 'como (adv.)',
+        sentence: 'He used me as a guinea pig',
+        oracion: 'Me utilizó como conejillo de indias'
+},
+{
+        word: 'will',
+        palabra: '(futuro), voluntad',
+        sentence: 'Will she come?',
+        oracion: '¿Vendrá? (Ella)'
+}
+
+];
+
+
+
+
+
+const h1 = document.createElement('h1')
+h1.innerHTML = app.word;
+
+aplicacion.appendChild(h1)
