@@ -1,7 +1,10 @@
-const aplicacion = document.querySelector('.first')
+const wordIn = document.createElement('h3')
+        insert = document.querySelector('first');
+
+document.body.append(words);
 
 
-const app = [
+const words = [
 
 {
 	word: "the",
@@ -29,12 +32,3 @@ const app = [
 }
 
 ];
-
-
-
-
-
-const h1 = document.createElement('h1')
-h1.innerHTML = app.word;
-
-aplicacion.appendChild(h1)
