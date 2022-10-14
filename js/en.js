@@ -1,18 +1,12 @@
 const wordSelect = document.querySelector('.first');
 const wordPut = document.createElement('h2');
-        wordPut.textContent = 'tomorrow will be better than today'
-
-        console.log(wordPut);
+        wordPut.textContent = 'whever'
 
 
 const btnReload = document.querySelector('.button')
-btnReload.addEventListener('click', otherWord);
-
-function otherWord() {
-        if (v) {
-
-        }
-}
+btnReload.addEventListener('click', () => {
+        
+});
 
 
 
