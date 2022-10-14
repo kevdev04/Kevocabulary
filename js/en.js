@@ -1,7 +1,21 @@
-const wordIn = document.createElement('h3')
-        insert = document.querySelector('first');
+const wordSelect = document.querySelector('.first');
+const wordPut = document.createElement('h2');
+        wordPut.textContent = 'tomorrow will be better than today'
 
-document.body.append(words);
+        console.log(wordPut);
+
+
+const btnReload = document.querySelector('.button')
+btnReload.addEventListener('click', otherWord);
+
+function otherWord() {
+        if (v) {
+
+        }
+}
+
+
+
 
 
 const words = [
