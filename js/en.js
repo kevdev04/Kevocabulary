@@ -11,16 +11,16 @@ btnReload.addEventListener('click', reload);
 
 function reload (e) {
 
-        let resultado;
+        let resultado = words.map(e => e.word1);
 
-        resultado = 'helpme'
+        let resultado2 = words.map(e => e.palabra1);
 
-        console.table(words);
+        console.log(resultado);
 
 
 
         word.textContent = resultado;
-        palabra.textContent = resultado;
+        palabra.textContent = resultado2;
 }
 
 
@@ -28,19 +28,20 @@ function reload (e) {
 const words = [
 
 {
-	word: "the",palabra: "El / Los",sentence: "The sun is up",
+	word1: "the",
+        palabra1: "El / Los",sentence: "The sun is up",
         oracion: "El sol ha salido"
 },
 {
-	word: "be",palabra: "Ser / Estar",sentence: "Don't be sad",
+	word2: "be",palabra: "Ser / Estar",sentence: "Don't be sad",
         oracion: "No estes trsite"
 },
 {
-        word: 'as',palabra: 'como (adv.)',sentence: 'He used me as a guinea pig',
+        word3: 'as',palabra: 'como (adv.)',sentence: 'He used me as a guinea pig',
         oracion: 'Me utilizó como conejillo de indias'
 },
 {
-        word: 'will', palabra: '(futuro), voluntad', sentence: 'Will she come?',
+        word4: 'will', palabra: '(futuro), voluntad', sentence: 'Will she come?',
         oracion: '¿Vendrá? (Ella)'
 }
 
