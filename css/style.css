@@ -128,6 +128,10 @@ h3 {
     border: 2px var(--yellow) solid;
 
 }
+.button:hover {
+    cursor: pointer;
+    background-color: red;
+}
 .flex-button {
     display: flex;
     justify-content:center;
