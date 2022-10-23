@@ -162,9 +162,21 @@ h3 {
 
 
 
- .footer {
+.footer {
     display: flex;
     justify-content: center;
 
     margin-top: 2rem;
+
+    color: #ffeb3b;
  }
+
+
+
+.credits {
+    color: #ffeb3b;
+    font-family: var(--font);
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: .5rem;
+}
