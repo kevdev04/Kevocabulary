@@ -11,32 +11,30 @@ const btnReload = document.querySelector('#button');
 
 btnReload.addEventListener('click', reload);
 
-function reload () {
+let index = 0;
+
+function updateIndex() {
+index = index === words.length - 1 ?
+        0 :
+        index + 1;
+}
+
+  // you don't to define those variables each time you call reload, you can define them once outside the function.
+
+
+function reload() {
 
         const conjunto = words.map((word) => word.word);
         const conjunto2 = words.map((word) => word.palabra);
         const conjunto3 = words.map((word) => word.sentence);
         const conjunto4 = words.map((word) => word.oracion);
 
-        wordy.textContent = conjunto[0]
-        palabraHTML.textContent = conjunto2[0]
-        sentence.textContent = conjunto3[0]
-        oracion.textContent = conjunto4[0]
+        wordy.textContent = conjunto[index]
+        palabraHTML.textContent = conjunto2[index]
+        sentence.textContent = conjunto3[index]
+        oracion.textContent = conjunto4[index]
 
-
-        // words.forEach( (parte) => {
-        //         const { word , palabra, sentence, oracion} = parte;
-        //         const prueba = document.createElement('h2');
-
-        //         prueba.textContent = `
-                
-        //         ${word}
-                
-        //         `;
-
-        //         wordy.appendChild(prueba);
-        // });
-
+        updateIndex();
 }
 
 
@@ -45,22 +43,23 @@ function reload () {
 const words = [
 
 {
-	word: "the",
-        palabra: "El / Los",sentence: "The sun is up",
-        oracion: "El sol ha salido"
+        word: 'avoid',
+        palabra: 'evitar',
+        sentence: 'She took a detour to avoid the heavy traffic',
+        oracion: 'Tomó un desvío para evitar el tráfico pesado'
 },
 {
-	word: "be",palabra: "Ser / Estar",sentence: "Don't be sad",
-        oracion: "No estes trsite"
+        word: 'waste',
+        palabra: 'desperdiciar',
+        sentence: 'Dont waste your money.',
+        oracion: 'No desperdicies tu dinero.'
 },
 {
-        word: 'as',palabra: 'como (adv.)',sentence: 'He used me as a guinea pig',
-        oracion: 'Me utilizó como conejillo de indias'
+        word: 'lay',
+        palabra: 'poner',
+        sentence: ' I dont like to lay my purse on the floor.',
+        oracion: 'No me gusta dejar mi bolso en el suelo.'
 },
-{
-        word: 'will', palabra: '(futuro), voluntad', sentence: 'Will she come?',
-        oracion: '¿Vendrá? (Ella)'
-}
 
 ];
 
