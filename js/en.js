@@ -18,19 +18,28 @@ function reload () {
         const conjunto3 = words.map((word) => word.sentence);
         const conjunto4 = words.map((word) => word.oracion);
 
-        
-
         wordy.textContent = conjunto[0]
         palabraHTML.textContent = conjunto2[0]
         sentence.textContent = conjunto3[0]
         oracion.textContent = conjunto4[0]
+
+
+        // words.forEach( (parte) => {
+        //         const { word , palabra, sentence, oracion} = parte;
+        //         const prueba = document.createElement('h2');
+
+        //         prueba.textContent = `
+                
+        //         ${word}
+                
+        //         `;
+
+        //         wordy.appendChild(prueba);
+        // });
+
 }
-btnReload.addEventListener('click', magia2);
-function magia2() {
-        if (conjunto[i] === 0) {
-                conjunto[i++]
-        }
-}
+
+
 
 
 const words = [
