@@ -24,8 +24,8 @@ index = index === pv.length - 1 ?
 
 function reload() {
 
-        const conjunto = pv.map((verb) => verb.verb);
-        const conjunto2 = pv.map((verb) => verb.verbo);
+        const conjunto = pv.map((verb) => verb.word);
+        const conjunto2 = pv.map((verb) => verb.palabra);
         const conjunto3 = pv.map((verb) => verb.sentence);
         const conjunto4 = pv.map((verb) => verb.oracion);
 

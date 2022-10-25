@@ -22,8 +22,8 @@ index = index === words.length - 1 ?
 
 function reload() {
 
-        const conjunto = words.map((verb) => verb.verb);
-        const conjunto2 = words.map((verb) => verb.verbo);
+        const conjunto = words.map((verb) => verb.word);
+        const conjunto2 = words.map((verb) => verb.palabra);
         const conjunto3 = words.map((verb) => verb.sentence);
         const conjunto4 = words.map((verb) => verb.oracion);
 
