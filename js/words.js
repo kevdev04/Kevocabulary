@@ -38,10 +38,22 @@ function reload() {
 const words = [
 
         {
-                word: '',
-                palabra: '',
-                sentence: '',
-                oracion: ''
+                word: 'kind',
+                palabra: 'amable',
+                sentence: 'Tom is very kind',
+                oracion: 'Tom es muy amable'
+        },
+        {
+                word: 'thought',
+                palabra: 'pensamiento',
+                sentence: 'I thought we were going to go somewhere.',
+                oracion: 'Pensé que íbamos a ir a algún sitio.'
+        },
+        {
+                word: 'might',
+                palabra: 'puede',
+                sentence: 'I might see you tomorrow.',
+                oracion: 'Puede que te vea mañana.'
         }
 
 ];
