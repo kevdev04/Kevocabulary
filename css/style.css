@@ -64,7 +64,7 @@ h1 {
 h2 {
     font-family: var(--font);
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 2.2rem;
     color: var(--yellow);
 }
 h3 {
@@ -73,6 +73,59 @@ h3 {
     font-size: 1.5rem;
     color: var(--white);
 }
+
+.nav-bar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    gap: 2rem;
+
+}
+
+.nav-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 3.6rem;
+    width: 4.6rem;
+    border: 2px var(--yellow) solid;
+    border-radius: 1rem;
+    color: var(--yellow);
+    background-color: var(--card);
+
+    font-family: var(--font);
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+
+    padding: 1rem;
+}
+
+
+
+.nav-button-onclick {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 3.6rem;
+    width: 4.6rem;
+    border: 2px var(--card) solid;
+    border-radius: 1rem;
+    color: var(--card);
+    background-color: var(--yellow);
+
+    font-family: var(--font);
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+
+    padding: 1rem;
+}
+
+
 .container {
     width: 25rem;
     height: 35rem;
@@ -97,8 +150,8 @@ h3 {
     flex-direction: column;
 }
 .second {
-    gap: 3.5rem;
-    padding: 2rem 1rem 1rem 1rem;
+    gap: 3rem;
+    padding: .4rem 1rem 1rem 1rem;
     display: flex;
     align-items: left;
     justify-content: center;
@@ -130,7 +183,7 @@ h3 {
 }
 .button:hover {
     cursor: pointer;
-    background-color: red;
+    background-color: rgb(255, 255, 249);
 }
 .flex-button {
     display: flex;

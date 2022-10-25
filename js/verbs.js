@@ -2,8 +2,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 // Aqui andan las variables
-const wordy = document.querySelector('#word');
-const palabraHTML = document.querySelector('#palabra');
+const verby = document.querySelector('#word');
+const verboHTML = document.querySelector('#palabra');
 const sentence = document.querySelector('#sen')
 const oracion = document.querySelector('#oracion')
 const btnReload = document.querySelector('#button');
@@ -14,7 +14,7 @@ btnReload.addEventListener('click', reload);
 let index = 0;
 
 function updateIndex() {
-index = index === words.length - 1 ?
+index = index === verbs.length - 1 ?
         0 :
         index + 1;
 }
@@ -24,13 +24,13 @@ index = index === words.length - 1 ?
 
 function reload() {
 
-        const conjunto = words.map((word) => word.word);
-        const conjunto2 = words.map((word) => word.palabra);
-        const conjunto3 = words.map((word) => word.sentence);
-        const conjunto4 = words.map((word) => word.oracion);
+        const conjunto = verbs.map((verb) => verb.verb);
+        const conjunto2 = verbs.map((verb) => verb.verbo);
+        const conjunto3 = verbs.map((verb) => verb.sentence);
+        const conjunto4 = verbs.map((verb) => verb.oracion);
 
-        wordy.textContent = conjunto[index]
-        palabraHTML.textContent = conjunto2[index]
+        verby.textContent = conjunto[index]
+        verboHTML.textContent = conjunto2[index]
         sentence.textContent = conjunto3[index]
         oracion.textContent = conjunto4[index]
 
@@ -40,23 +40,23 @@ function reload() {
 
 
 
-const words = [
+const verbs = [
 
 {
-        word: 'avoid',
-        palabra: 'evitar',
+        verb: 'avoid',
+        verbo: 'evitar',
         sentence: 'She took a detour to avoid the heavy traffic',
         oracion: 'Tomó un desvío para evitar el tráfico pesado'
 },
 {
-        word: 'waste',
-        palabra: 'desperdiciar',
+        verb: 'waste',
+        verbo: 'desperdiciar',
         sentence: 'Dont waste your money.',
         oracion: 'No desperdicies tu dinero.'
 },
 {
-        word: 'lay',
-        palabra: 'poner',
+        verb: 'lay',
+        verbo: 'poner',
         sentence: ' I dont like to lay my purse on the floor.',
         oracion: 'No me gusta dejar mi bolso en el suelo.'
 },
