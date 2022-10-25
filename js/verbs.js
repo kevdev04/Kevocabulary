@@ -24,8 +24,8 @@ index = index === verbs.length - 1 ?
 
 function reload() {
 
-        const conjunto = verbs.map((verb) => verb.verb);
-        const conjunto2 = verbs.map((verb) => verb.verbo);
+        const conjunto = verbs.map((verb) => verb.word);
+        const conjunto2 = verbs.map((verb) => verb.palabra);
         const conjunto3 = verbs.map((verb) => verb.sentence);
         const conjunto4 = verbs.map((verb) => verb.oracion);
 
@@ -43,20 +43,20 @@ function reload() {
 const verbs = [
 
 {
-        verb: 'Avoid',
-        verbo: 'evitar',
+        word: 'Avoid',
+        palabra: 'evitar',
         sentence: 'She took a detour to avoid the heavy traffic',
         oracion: 'Tomó un desvío para evitar el tráfico pesado'
 },
 {
-        verb: 'Waste',
-        verbo: 'desperdiciar',
+        word: 'Waste',
+        palabra: 'desperdiciar',
         sentence: 'Dont waste your money.',
         oracion: 'No desperdicies tu dinero.'
 },
 {
-        verb: 'Lay',
-        verbo: 'poner',
+        word: 'Lay',
+        palabra: 'poner',
         sentence: ' I dont like to lay my purse on the floor.',
         oracion: 'No me gusta dejar mi bolso en el suelo.'
 },
