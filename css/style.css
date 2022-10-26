@@ -12,7 +12,7 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+box-sizing: border-box;
 }
 /* Remove default margin */
 body,
@@ -25,7 +25,7 @@ figure,
 blockquote,
 dl,
 dd {
-  margin: 0;
+margin: 0;
 }
 /* Set core body defaults */
 body {
@@ -33,26 +33,26 @@ body {
     text-rendering: optimizeSpeed;
     line-height: 1.5;
     background-color: #0b1358;
-  }
+}
   /* Make images easier to work with */
 img,
 picture {
-  max-width: 100%;
-  display: block;
+max-width: 100%;
+display: block;
 }
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
     html:focus-within {
-     scroll-behavior: auto;
+    scroll-behavior: auto;
     }
     
     *,
     *::before,
     *::after {
-      animation-duration: 0.01ms !important;
-      animation-iteration-count: 1 !important;
-      transition-duration: 0.01ms !important;
-      scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
     }
 }
 h1 {
@@ -73,6 +73,8 @@ h3 {
     font-size: 1.5rem;
     color: var(--white);
 }
+
+/* navigation  */
 
 .nav-bar {
     display: flex;
@@ -103,8 +105,6 @@ h3 {
     padding: 1rem;
 }
 
-
-
 .nav-button-onclick {
     display: flex;
     justify-content: center;
@@ -125,6 +125,27 @@ h3 {
     padding: 1rem;
 }
 
+.arrow-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 1.5rem;
+    width: 2.5rem;
+    border: 2px var(--yellow) solid;
+    border-radius: 2rem;
+    color: var(--yellow);
+    background-color: var(--card);
+
+    font-family: var(--font);
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+
+    padding: 1rem;
+}
+
+/* main content */
 
 .container {
     width: 25rem;
@@ -199,7 +220,7 @@ h3 {
 
     height: 5rem;
 
- } 
+} 
 
 
 .sentence2 {
@@ -209,22 +230,32 @@ h3 {
     text-align:justify;
 
     height: 5rem;
- }
+}
 
-
-
-
+/* ps el footer */
 
 .footer {
     display: flex;
     justify-content: center;
-
+    flex-direction: row;
     margin-top: 2rem;
 
     color: #ffeb3b;
- }
+}
 
+.more-options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+    flex-direction: row;
+
+    gap: 1rem;
+
+    padding: 2rem;
+    margin: 1rem;
+
+}
 
 .credits {
     color: #ffeb3b;
