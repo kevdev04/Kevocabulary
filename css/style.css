@@ -105,6 +105,26 @@ h3 {
     padding: 1rem;
 }
 
+.nav-button:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 3.6rem;
+    width: 4.6rem;
+    border: 2px var(--card) solid;
+    border-radius: 1rem;
+    color: var(--card);
+    background-color: var(--yellow);
+
+    font-family: var(--font);
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+
+    padding: 1rem;
+}
+
 .nav-button-onclick {
     display: flex;
     justify-content: center;
@@ -138,11 +158,17 @@ h3 {
     background-color: var(--card);
 
     font-family: var(--font);
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 700;
     text-decoration: none;
 
     padding: 1rem;
+}
+
+.arrow-options:hover {
+    background-color: var(--yellow);
+    color: var(--card);
+    border: 2px var(--card) solid;
 }
 
 /* main content */

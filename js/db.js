@@ -231,3 +231,14 @@ const verbs = [
         }
 
 ];
+
+const spv = [
+
+        {
+                word: 'ate',
+                palabra: 'comi',
+                sentence: 'i ate very late',
+                oracion: 'comi muy tarde'
+        }
+
+]
