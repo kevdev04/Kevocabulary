@@ -1,17 +1,25 @@
 document.addEventListener('DOMContentLoaded', function () {
 
 
-// Aqui andan las variables
+// Variables
 const verby = document.querySelector('#word');
 const verboHTML = document.querySelector('#palabra');
-const sentence = document.querySelector('#sen')
-const oracion = document.querySelector('#oracion')
+const sentence = document.querySelector('#sen');
+const oracion = document.querySelector('#oracion');
 const btnReload = document.querySelector('#button');
+const scrollBttn = document.querySelector('#scrollButton');
+let index = 0;
+
+
+// Event Listeners
+
 
 
 btnReload.addEventListener('click', reload);
 
-let index = 0;
+
+
+// Functions
 
 function updateIndex() {
 index = index === verbs.length - 1 ?
@@ -34,5 +42,9 @@ function reload() {
 
         updateIndex();
 }
+
+document.querySelector("#btm").addEventListener("click", () => {
+        window.scrollTo(0,document.body.scrollHeight);
+});
 
 });

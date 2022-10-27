@@ -35,6 +35,10 @@ function reload() {
         oracion.textContent = conjunto4[index]
 
         updateIndex();
-};
+}
+
+document.querySelector("#btm").addEventListener("click", () => {
+        window.scrollTo(0,document.body.scrollHeight);
+});
 
 });
